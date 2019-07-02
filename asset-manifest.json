@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-zgp/static/css/main.a571baa6.chunk.css",
+    "main.js": "/react-zgp/static/js/main.15531eaf.chunk.js",
+    "main.js.map": "/react-zgp/static/js/main.15531eaf.chunk.js.map",
+    "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
+    "runtime~main.js.map": "/react-zgp/static/js/runtime~main.f30e12c4.js.map",
+    "static/js/2.b7f52e28.chunk.js": "/react-zgp/static/js/2.b7f52e28.chunk.js",
+    "static/js/2.b7f52e28.chunk.js.map": "/react-zgp/static/js/2.b7f52e28.chunk.js.map",
+    "index.html": "/react-zgp/index.html",
+    "precache-manifest.c24c4cd8593e89d0bedf91f1747cb555.js": "/react-zgp/precache-manifest.c24c4cd8593e89d0bedf91f1747cb555.js",
+    "service-worker.js": "/react-zgp/service-worker.js",
+    "static/css/main.a571baa6.chunk.css.map": "/react-zgp/static/css/main.a571baa6.chunk.css.map",
+    "static/media/preloader.gif": "/react-zgp/static/media/preloader.d9224981.gif",
+    "static/media/video.mp4": "/react-zgp/static/media/video.1175895b.mp4"
+  }
+}
