@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import preloader from './images/preloader.gif';
 import './App.css';
+import Video from './Video.js';
+import Logo from './Logo.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false
+    };
+  }
+
+  checkPageLoading = () => {
+    window.onload = () => {
+      this.setState({
+        isLoaded: true
+      })
+    }
+  }
+
+  componentDidMount() {
+
+  }
+
+  render () {
+    let preloaderScreenClass = `preloader-screen`;
+    if (this.state.isLoaded === true) {
+      preloaderScreenClass = `preloader-screen loaded`
+    }
+    return (
+        <div className="App">
+          <div className={preloaderScreenClass}>
+            <img src={preloader} alt="site preloader" className="preloader"/>
+          </div>
+          {this.checkPageLoading()}
+          <div className="main-page">
+            <Video />
+          </div>
+          <Logo />
+        </div>
+    );
+  }
 }
 
 export default App;
