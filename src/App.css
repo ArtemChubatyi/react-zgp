@@ -1,5 +1,7 @@
 body {
   overflow-y: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .App {
@@ -86,6 +88,7 @@ body {
   margin-left: -175px;
   width: 350px;
   height: 350px;
+  transition: 0.5s linear;
 }
 
 .layer {
@@ -109,4 +112,228 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 11;
+}
+#scene.invisible {
+  opacity: 0;
+  bottom: 35%;
+}
+.visible {
+  opacity: 1;
+}
+.menu-button {
+  width: 40px;
+  height: 32px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.menu-button.hided {
+  top: -50px;
+}
+.hamburger-line {
+  background: #ffffff;
+  height: 1px;
+  transition: 0.5s;
+}
+.hamburger-line:nth-child(1) {
+  width: 65%;
+}
+.hamburger-line:nth-child(2) {
+  width: 110%;
+}
+.hamburger-line:nth-child(3) {
+  width: 70%;
+}
+.hamburger-line:nth-child(4) {
+  width: 120%;
+}
+.menu-button:hover .hamburger-line {
+  width: 100%;
+}
+.hamburger-line.compressed {
+  width: 0;
+}
+
+.chat-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.chat-button.hided {
+  bottom: -50px;
+}
+
+.open-menu-button {
+  position: fixed;
+  bottom: -25px;
+  margin-left: 50%;
+  left: -35px;
+  width: 70px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.open-menu-button:hover {
+  bottom: 0;
+}
+.open-line {
+  margin: 9px;
+}
+.vertical-line {
+  background: #ffffff;
+  width: 1px;
+  height: 100%;
+}
+
+.open-menu-button.hided {
+  bottom: -130px;
+}
+
+.menu-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  opacity: 0;
+  color: #ffffff;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.menu-page.opened {
+  opacity: 1;
+  display: flex;
+}
+
+.menu-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  list-style-type: none;
+  font-size: 2.5em;
+}
+.menu-link {
+  width: 100%;
+  line-height: 150%;
+}
+
+.menu-link a {
+  position: relative;
+  text-decoration: none;
+  color: #a7a2a2;
+}
+.menu-link  a.active {
+  color: #ffffff;
+}
+.menu-link a::before, .menu-link a::after  {
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: #5ec7eb;
+  position: absolute;
+  top: 50%;
+  transition: 0.3s;
+}
+.menu-link a:hover:before, .menu-link a:hover:after {
+  width: 60px;
+}
+
+.menu-link a::before {
+  right: 100%;
+  margin-right: 20px;
+}
+.menu-link a::after {
+  left: 100%;
+  margin-left: 20px;
+}
+
+.menu-footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  justify-self: end;
+  font-size: 13px;
+}
+
+.lang{
+  width: 33.3%;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 2px;
+  font-size: 10px;
+  width: 33.3%;
+}
+
+.social-links {
+  width: 33.3%;
+  cursor: pointer;
+}
+
+.close-button {
+  top: 20px;
+  right: 20px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-button-line {
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.close-button-line.first{
+  transform: rotate(45deg);
+}
+.close-button-line.second{
+  transform: rotate(-45deg);
+}
+.close-button:hover .close-button-line.first {
+  transform: rotate(0deg);
+}
+.close-button:hover .close-button-line.second {
+  transform: rotate(0deg);
+}
+
+.menu-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 130px;
+  height: 40px;
+  background-image: url("images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

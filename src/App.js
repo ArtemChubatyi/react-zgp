@@ -2,24 +2,45 @@ import React, {Component} from 'react';
 import preloader from './images/preloader.gif';
 import './App.css';
 import Video from './Video.js';
-import Logo from './Logo.js'
+import Logo from './Logo.js';
+import Interface from './Interface.js';
+import MenuPage from './MenuPage.js'
 
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoaded: false
+        isLoaded: false,
+        isMenuOpened: false,
+        menuPageClass: "menu-page"
     };
   }
 
   checkPageLoading = () => {
     window.onload = () => {
-      this.setState({
-        isLoaded: true
-      })
+      setTimeout(()=>{
+        this.setState({
+          isLoaded: true
+        })
+      }, 2000)
     }
-  }
+  };
+
+  handleMenuOpen = () => {
+      if(!this.state.isMenuOpened) {
+          this.setState({
+              menuPageClass: "menu-page opened",
+              isMenuOpened: !this.state.isMenuOpened
+          });
+      } else {
+          this.setState({
+              menuPageClass: "menu-page",
+              isMenuOpened: !this.state.isMenuOpened
+          });
+      }
+
+  };
 
   componentDidMount() {
 
@@ -39,7 +60,9 @@ class App extends Component {
           <div className="main-page">
             <Video />
           </div>
-          <Logo />
+          <Logo isPageLoaded={this.state.isLoaded} />
+          <Interface isPageLoaded={this.state.isLoaded} handleMenuOpen={this.handleMenuOpen}/>
+          <MenuPage menuPageClass={this.state.menuPageClass} handleMenuOpen={this.handleMenuOpen}/>
         </div>
     );
   }
