@@ -23,7 +23,7 @@ class App extends Component {
         this.setState({
           isLoaded: true
         })
-      }, 2000)
+      }, 1000)
     }
   };
 
@@ -35,7 +35,7 @@ class App extends Component {
           });
       } else {
           this.setState({
-              menuPageClass: "menu-page",
+              menuPageClass: "menu-page hided",
               isMenuOpened: !this.state.isMenuOpened
           });
       }
@@ -62,7 +62,7 @@ class App extends Component {
           </div>
           <Logo isPageLoaded={this.state.isLoaded} />
           <Interface isPageLoaded={this.state.isLoaded} handleMenuOpen={this.handleMenuOpen}/>
-          <MenuPage menuPageClass={this.state.menuPageClass} handleMenuOpen={this.handleMenuOpen}/>
+          <MenuPage menuPageClass={this.state.menuPageClass} handleMenuOpen={this.handleMenuOpen} isMenuOpened={this.state.isMenuOpened}/>
         </div>
     );
   }
