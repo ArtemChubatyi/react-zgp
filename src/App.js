@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import preloader from './images/preloader.gif';
 import './App.css';
-import Video from './Video.js';
-import Logo from './Logo.js';
+import Background from './Background.jsx';
+import Scene from './Scene.js';
 import Interface from './Interface.js';
 import MenuPage from './MenuPage.js'
 
@@ -57,12 +58,14 @@ class App extends Component {
             <img src={preloader} alt="site preloader" className="preloader"/>
           </div>
           {this.checkPageLoading()}
+          <Router>
           <div className="main-page">
-            <Video />
+            <Background />
           </div>
-          <Logo isPageLoaded={this.state.isLoaded} />
+          <Scene isPageLoaded={this.state.isLoaded} />
           <Interface isPageLoaded={this.state.isLoaded} handleMenuOpen={this.handleMenuOpen}/>
           <MenuPage menuPageClass={this.state.menuPageClass} handleMenuOpen={this.handleMenuOpen} isMenuOpened={this.state.isMenuOpened}/>
+          </Router>
         </div>
     );
   }

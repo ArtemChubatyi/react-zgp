@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 class MenuPage extends Component  {
     constructor(props) {
@@ -14,7 +16,7 @@ class MenuPage extends Component  {
             <>
                 <div className={menuPageClass}>
                     <ul className="menu-list">
-                        <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a className="active" href="javascript:void(0)">Услуги</a></li>
+                        <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><Link to="/services">About</Link></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Реализация</a></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Технологии</a></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Галерея</a></li>
