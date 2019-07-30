@@ -13,7 +13,7 @@ let Home = () => <><div className="background"><video className={"fullscreen-bg_
 function Background() {
     return (
         <>
-            <Route path="/" exact component={Home} />
+            <Route path="/react-zgp" exact component={Home} />
             <Route path="/services" component={Services} />
         </>
     );

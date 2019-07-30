@@ -14,7 +14,7 @@ function Scene ({isPageLoaded}) {
     return (
         <div id="scene" className={(isPageLoaded) ? "visible" : "invisible"}>
             <div data-depth="0.2" className={"layer"}>
-                <Route path="/" exact component={Home} />
+                <Route path="/react-zgp" exact component={Home} />
                 <Route path="/services" component={getServices} />
             </div>
         </div>
