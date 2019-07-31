@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.e1640560.chunk.css",
-    "main.js": "/react-zgp/static/js/main.64673c70.chunk.js",
-    "main.js.map": "/react-zgp/static/js/main.64673c70.chunk.js.map",
+    "main.css": "/react-zgp/static/css/main.347a2ee6.chunk.css",
+    "main.js": "/react-zgp/static/js/main.9122efe2.chunk.js",
+    "main.js.map": "/react-zgp/static/js/main.9122efe2.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
     "runtime~main.js.map": "/react-zgp/static/js/runtime~main.f30e12c4.js.map",
     "static/js/2.a61658b4.chunk.js": "/react-zgp/static/js/2.a61658b4.chunk.js",
     "static/js/2.a61658b4.chunk.js.map": "/react-zgp/static/js/2.a61658b4.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.f59b8b6f5dd287982b56bf22b810ae52.js": "/react-zgp/precache-manifest.f59b8b6f5dd287982b56bf22b810ae52.js",
+    "precache-manifest.eaf4b597d6bbca5d8ef615cc0ba1c86b.js": "/react-zgp/precache-manifest.eaf4b597d6bbca5d8ef615cc0ba1c86b.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.e1640560.chunk.css.map": "/react-zgp/static/css/main.e1640560.chunk.css.map",
+    "static/css/main.347a2ee6.chunk.css.map": "/react-zgp/static/css/main.347a2ee6.chunk.css.map",
     "static/media/preloader.gif": "/react-zgp/static/media/preloader.d9224981.gif",
     "static/media/video.mp4": "/react-zgp/static/media/video.1175895b.mp4"
   }
