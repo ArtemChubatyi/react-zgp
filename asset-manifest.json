@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.c5133b20.chunk.css",
+    "main.css": "/react-zgp/static/css/main.ada7b816.chunk.css",
     "main.js": "/react-zgp/static/js/main.b0178ea6.chunk.js",
     "main.js.map": "/react-zgp/static/js/main.b0178ea6.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
@@ -8,9 +8,9 @@
     "static/js/2.a61658b4.chunk.js": "/react-zgp/static/js/2.a61658b4.chunk.js",
     "static/js/2.a61658b4.chunk.js.map": "/react-zgp/static/js/2.a61658b4.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.591e80919b82f5cf88dd23a99a925654.js": "/react-zgp/precache-manifest.591e80919b82f5cf88dd23a99a925654.js",
+    "precache-manifest.60aea9e4ba64318c62eddf4201ae65b8.js": "/react-zgp/precache-manifest.60aea9e4ba64318c62eddf4201ae65b8.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.c5133b20.chunk.css.map": "/react-zgp/static/css/main.c5133b20.chunk.css.map",
+    "static/css/main.ada7b816.chunk.css.map": "/react-zgp/static/css/main.ada7b816.chunk.css.map",
     "static/media/App.css": "/react-zgp/static/media/website-mini.78572ab7.png",
     "static/media/preloader.gif": "/react-zgp/static/media/preloader.d9224981.gif",
     "static/media/video.mp4": "/react-zgp/static/media/video.1175895b.mp4"
