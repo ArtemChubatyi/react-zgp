@@ -12,26 +12,32 @@ function Services ({isPageLoaded}) {
                     <div id="first" className="list-item__image">
                     </div>
                     <div className="list-item__title">Технологии</div>
+                    <div className="hover-line"/>
                 </div>
                 <div className="about__list-item list-item">
                     <div id="second" className="list-item__image"></div>
                     <div className="list-item__title">Разработка</div>
+                    <div className="hover-line"/>
                 </div>
                 <div className="about__list-item list-item">
                     <div id="third" className="list-item__image"></div>
                     <div className="list-item__title">Лаборатория</div>
+                    <div className="hover-line"/>
                 </div>
                 <div className="about__list-item list-item">
                     <div id="fourth" className="list-item__image"></div>
                     <div className="list-item__title">Персонал</div>
+                    <div className="hover-line"/>
                 </div>
                 <div className="about__list-item list-item">
                     <div id="fifth" className="list-item__image"></div>
                     <div className="list-item__title">Автопарк</div>
+                    <div className="hover-line"/>
                 </div>
                 <div className="about__list-item list-item">
                     <div id="sixth" className="list-item__image"></div>
                     <div className="list-item__title">Видео</div>
+                    <div className="hover-line"/>
                 </div>
             </div>
         </div>

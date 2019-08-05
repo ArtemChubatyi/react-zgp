@@ -565,20 +565,38 @@ body {
 }
 
 .about__list {
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
   width: 700px;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .list-item {
     cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.hover-line {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  margin-left: 14px;
+  margin-top: 5px;
+  background-color: #5ec7eb;
+  transition: .3s;
+}
+
+.list-item:hover > .hover-line {
+  width: 100px;
 }
 
 .list-item__image {
-  width: 200px;
+  width: 128px;
   height: 150px;
 }
 
