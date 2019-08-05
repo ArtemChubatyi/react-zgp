@@ -7,16 +7,14 @@ function getServices() {
 }
 
 function Home() {
-    return <div className="textlogo"><div className="text"></div></div>
+    return <div className="textlogo parallax-layer text"  data-parallax-deep="3000" />
 }
 
 function Scene ({isPageLoaded}) {
     return (
-        <div id="scene" className={(isPageLoaded) ? "visible" : "invisible"}>
-            <div data-depth="0.2" className={"layer"}>
-                <Route path="/react-zgp" exact component={Home} />
-                <Route path="/services" component={getServices} />
-            </div>
+        <div className={`parallax${(isPageLoaded) ? " visible" : " invisible"}`}>
+            <Route path="/react-zgp" exact component={Home} />
+            <Route path="/services" component={getServices} />
         </div>
 );
 

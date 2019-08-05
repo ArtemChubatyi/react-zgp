@@ -6,6 +6,7 @@ import Background from './Background.jsx';
 import Scene from './Scene.js';
 import Interface from './Interface.js';
 import MenuPage from './MenuPage.js'
+import About from "./About";
 
 
 class App extends Component {
@@ -59,10 +60,10 @@ class App extends Component {
           </div>
           {this.checkPageLoading()}
           <Router>
-          <div className="main-page">
-            <Background />
-          </div>
-          <Scene isPageLoaded={this.state.isLoaded} />
+            <Scene isPageLoaded={this.state.isLoaded} />
+            <div className="main-page">
+                <Background />
+            </div>
           <Interface isPageLoaded={this.state.isLoaded} handleMenuOpen={this.handleMenuOpen}/>
           <MenuPage menuPageClass={this.state.menuPageClass} handleMenuOpen={this.handleMenuOpen} isMenuOpened={this.state.isMenuOpened}/>
           </Router>

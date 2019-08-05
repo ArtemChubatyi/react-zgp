@@ -37,11 +37,46 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script >
-      function ready () {
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
+      function Parallax(options){
+        options = options || {};
+        this.nameSpaces = {
+          wrapper: options.wrapper || '.parallax',
+          layers: options.layers || '.parallax-layer',
+          deep: options.deep || 'data-parallax-deep'
+        };
+        this.init = function() {
+          const self = this,
+                  parallaxWrappers = document.querySelectorAll(this.nameSpaces.wrapper);
+          for(let i = 0; i < parallaxWrappers.length; i++){
+            (function(i){
+              const addParalax = (e) => {
+                  const x = e.clientX,
+                          y = e.clientY,
+                          layers = parallaxWrappers[i].querySelectorAll(self.nameSpaces.layers);
+                  for(let j = 0; j < layers.length; j++){
+                    (function(j){
+                      const deep = layers[j].getAttribute(self.nameSpaces.deep),
+                              disallow = layers[j].getAttribute('data-parallax-disallow'),
+                              itemX = (disallow && disallow === 'x') ? 0 : x / deep,
+                              itemY = (disallow && disallow === 'y') ? 0 : y / deep;
+                      if(disallow && disallow === 'both') return;
+
+                      layers[j].style.transform = 'translateX(' + itemX + '%) translateY(' + itemY + '%)';
+                    })(j);
+                  }
+              };
+
+              parallaxWrappers[i].addEventListener('mousemove', addParalax);
+            })(i);
+          }
+        };
+        this.init();
+        return this;
       }
-      document.addEventListener("DOMContentLoaded", ready);
+
+      window.addEventListener('load', function(){
+        new Parallax();
+      });
     </script>
   </body>
 </html>

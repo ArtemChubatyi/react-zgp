@@ -16,7 +16,7 @@ class MenuPage extends Component  {
             <>
                 <div className={menuPageClass}>
                     <ul className="menu-list">
-                        <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><Link to="/services">Компания</Link></li>
+                        <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><Link to="/services" onClick={this.props.handleMenuOpen}>Компания</Link></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Реализация</a></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Технологии</a></li>
                         <li className={(this.props.isMenuOpened) ? "menu-link showed" : "menu-link hided"}><a href="javascript:void(0)">Галерея</a></li>
