@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function Services ({isPageLoaded}) {
+function Services ({isPageLoaded, match}) {
     return (
         <div className={"about parallax-layer"}  data-parallax-deep="3000">
             <p className="about__title">НАША КОМПАНИЯ</p>
             <div className={"divider"}/>
             <p className="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorum earum ex ipsam. Culpa delectus, minus natus obcaecati quam unde?</p>
             <div className="about__list">
-                <div className="about__list-item list-item">
+                <Link className="about__list-item list-item" to={`/technologies`}>
                     <div id="first" className="list-item__image">
                     </div>
                     <div className="list-item__title">Технологии</div>
                     <div className="hover-line"/>
-                </div>
+                </Link>
                 <div className="about__list-item list-item">
                     <div id="second" className="list-item__image"></div>
                     <div className="list-item__title">Разработка</div>

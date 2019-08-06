@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import video from  './images/video.mp4'
 
-function Services() {
+function CommonBG() {
     return (<div className="background"><div className="gradient"/><div className="noise"/></div>)
 }
 
@@ -14,7 +14,8 @@ function Background() {
     return (
         <>
             <Route path="/react-zgp" exact component={Home} />
-            <Route path="/services" component={Services} />
+            <Route path="/services" component={CommonBG} />
+            <Route path="/technologies" component={CommonBG} />
         </>
     );
 }
