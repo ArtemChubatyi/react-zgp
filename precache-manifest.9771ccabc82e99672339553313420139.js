@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1304086b0f165cc196eed13d5a758d17",
+    "revision": "eddb8f3f74a2b0e80fdfedd960c69030",
     "url": "/react-zgp/index.html"
   },
   {
-    "revision": "ef6f37a1b94b8b4507e2",
-    "url": "/react-zgp/static/css/main.d1e345c1.chunk.css"
+    "revision": "92c0894d29cc01d94e57",
+    "url": "/react-zgp/static/css/main.d57ac505.chunk.css"
   },
   {
-    "revision": "59e4abb78f0637de39d9",
-    "url": "/react-zgp/static/js/2.a61658b4.chunk.js"
+    "revision": "5950dac41f71bb20cd24",
+    "url": "/react-zgp/static/js/2.37ba06c3.chunk.js"
   },
   {
-    "revision": "ef6f37a1b94b8b4507e2",
-    "url": "/react-zgp/static/js/main.d2d3ff52.chunk.js"
+    "revision": "92c0894d29cc01d94e57",
+    "url": "/react-zgp/static/js/main.65bb6a1c.chunk.js"
   },
   {
     "revision": "79ee11a08b5b4e6e0e8e",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "031ed90674f2bb6b9c3f5e70616a089f",
     "url": "/react-zgp/static/media/content-mini.031ed906.png"
+  },
+  {
+    "revision": "0a62312a16f5ffaf6a2df70aadb14096",
+    "url": "/react-zgp/static/media/draw-service-brand.0a62312a.png"
   },
   {
     "revision": "d922498136b63518f59b8b0ee054b4fd",
