@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.600ca911.chunk.css",
-    "main.js": "/react-zgp/static/js/main.41526087.chunk.js",
-    "main.js.map": "/react-zgp/static/js/main.41526087.chunk.js.map",
+    "main.css": "/react-zgp/static/css/main.df9b6ed4.chunk.css",
+    "main.js": "/react-zgp/static/js/main.e45641f8.chunk.js",
+    "main.js.map": "/react-zgp/static/js/main.e45641f8.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
     "runtime~main.js.map": "/react-zgp/static/js/runtime~main.f30e12c4.js.map",
-    "static/js/2.37ba06c3.chunk.js": "/react-zgp/static/js/2.37ba06c3.chunk.js",
-    "static/js/2.37ba06c3.chunk.js.map": "/react-zgp/static/js/2.37ba06c3.chunk.js.map",
+    "static/js/2.31966e9e.chunk.js": "/react-zgp/static/js/2.31966e9e.chunk.js",
+    "static/js/2.31966e9e.chunk.js.map": "/react-zgp/static/js/2.31966e9e.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.5c52efe305ceb0f6136657f17855ffb8.js": "/react-zgp/precache-manifest.5c52efe305ceb0f6136657f17855ffb8.js",
+    "precache-manifest.4f5d0ab423be728ed549b555295fd247.js": "/react-zgp/precache-manifest.4f5d0ab423be728ed549b555295fd247.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.600ca911.chunk.css.map": "/react-zgp/static/css/main.600ca911.chunk.css.map",
+    "static/css/main.df9b6ed4.chunk.css.map": "/react-zgp/static/css/main.df9b6ed4.chunk.css.map",
     "static/media/App.css": "/react-zgp/static/media/website-mini.78572ab7.png",
     "static/media/TechnologiesStyles.css": "/react-zgp/static/media/draw-service-brand.0a62312a.png",
     "static/media/preloader.gif": "/react-zgp/static/media/preloader.d9224981.gif",
-    "static/media/video.mp4": "/react-zgp/static/media/video.fcb6b490.mp4"
+    "static/media/video.mp4": "/react-zgp/static/media/video.1175895b.mp4"
   }
 }
