@@ -107,7 +107,7 @@ body {
   opacity: 1;
 }
 .menu-button {
-  z-index: 3;
+  z-index: 5;
   width: 40px;
   height: 32px;
   position: fixed;
@@ -539,7 +539,7 @@ body {
 }
 
 .about {
-  z-index: 3;
+  z-index: 4;
   margin-top: -50px;
   display: flex;
   align-items: center;
@@ -550,6 +550,13 @@ body {
 
 .about__title {
   margin: 0;
+  animation-name: appearingElementTop;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(-200px);
+  animation-delay: 200ms;
 }
 
 .divider {
@@ -557,11 +564,24 @@ body {
   width: 100px;
   height: 2px;
   background-color: #5ec7eb;
+  animation-name: appearingElementTop;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(-200px);
+  animation-delay: 100ms;
 }
 
 .about__description {
   font-style: italic;
   width: 500px;
+  animation-name: appearingElementTop;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(-200px);
 }
 
 .about__list {
@@ -575,7 +595,38 @@ body {
   flex-wrap: wrap;
 }
 
+.about__list-item {
+  animation-name: appearingElement;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.about__list-item:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.about__list-item:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+.about__list-item:nth-child(4) {
+  animation-delay: 200ms;
+}
+
+.about__list-item:nth-child(5) {
+  animation-delay: 250ms;
+}
+
+.about__list-item:nth-child(6) {
+  animation-delay: 300ms;
+}
+
 .list-item {
+  color: white;
+  text-decoration: none;
     cursor: pointer;
     margin-bottom: 5px;
 }
@@ -662,5 +713,120 @@ body {
   height: 100%;
 }
 
+.animation-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
 
+.animation-column {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  width: 12.5%;
+  transform: scaleX(0);
+  background: white;
+  animation-name: openAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+.animation-column:nth-child(1) {
+  animation-delay: 100ms;
+}
+.animation-column:nth-child(2) {
+  animation-delay: 150ms;
+}
+.animation-column:nth-child(3) {
+  animation-delay: 200ms;
+}
+.animation-column:nth-child(4) {
+  animation-delay: 250ms;
+}
+.animation-column:nth-child(5) {
+  animation-delay: 300ms;
+}
+.animation-column:nth-child(6) {
+  animation-delay: 350ms;
+}
+.animation-column:nth-child(7) {
+  animation-delay: 400ms;
+}
+.animation-column:nth-child(8) {
+  animation-delay: 450ms;
+}
+
+@keyframes openAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+  30% {
+    border-right: 1px solid black;
+  }
+  100% {
+    transform: scaleX(1);
+    border-right: 1px solid black;
+  }
+}
+
+.animation-preloader {
+  height: 39px;
+  width: 213px;
+  position: absolute;
+  top: 50%;
+  margin-top: -19.5px;
+  left: 50%;
+  margin-left: -106.5px;
+  opacity: 0;
+  animation-name: appearingLogo;
+  animation-duration: 2s;
+}
+
+@keyframes appearingLogo {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearingElement {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearingElementTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 

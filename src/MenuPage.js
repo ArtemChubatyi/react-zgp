@@ -36,7 +36,7 @@ class MenuPage extends Component  {
                         <div className="close-button-line first"></div>
                         <div className="close-button-line second"></div>
                     </div>
-                    <div className={(this.props.isMenuOpened) ? "menu-logo showed" : "menu-logo hided"}></div>
+                    <Link className={(this.props.isMenuOpened) ? "menu-logo showed" : "menu-logo hided"} to={'/react-zgp'} onClick={this.props.handleMenuOpen}></Link>
                 </div>
             </>
         );
