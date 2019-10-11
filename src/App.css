@@ -589,7 +589,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: 700px;
+  width: 900px;
   height: 350px;
   display: flex;
   flex-wrap: wrap;
@@ -647,7 +647,7 @@ body {
 }
 
 .list-item__image {
-  width: 128px;
+  width: 150px;
   height: 150px;
 }
 
@@ -657,42 +657,42 @@ body {
 }
 
 #first {
-  background-image: url("./images/website-mini.png");
+  background-image: url("./images/technology.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #second {
-  background-image: url("./images/branding-mini.png");
+  background-image: url("./images/development.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #third {
-  background-image: url("./images/content-mini.png");
+  background-image: url("./images/laboratory.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #fourth {
-  background-image: url("./images/print-mini.png");
+  background-image: url("./images/staff.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #fifth {
-  background-image: url("./images/seo-mini.png");
+  background-image: url("./images/truck.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #sixth {
-  background-image: url("./images/strategy-mini.png");
+  background-image: url("./images/video.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -766,11 +766,11 @@ body {
     transform: scaleX(1);
   }
   30% {
-    border-right: 1px solid black;
+    border-right: 1px solid #c1c1c1;
   }
   100% {
     transform: scaleX(1);
-    border-right: 1px solid black;
+    border-right: 1px solid #c1c1c1;
   }
 }
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Services from './Services';
 import Technologies from "./Technologies/Technologies";
+import Development from "./Development/Development";
+import Laboratory from "./Laboratory/Laboratory";
 
 
 function Home() {
@@ -16,7 +18,8 @@ function Scene ({isPageLoaded}) {
             <Route path="/react-zgp" exact component={Home} />
             <Route path="/services" component={Services} />
             <Route path="/technologies" component={Technologies} />
-
+            <Route path="/development" component={Development} />
+            <Route path="/laboratory" component={Laboratory} />
         </div>
 );
 

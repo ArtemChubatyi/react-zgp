@@ -27,16 +27,16 @@ function Services ({isPageLoaded, match}) {
                         <div className="list-item__title">Технологии</div>
                         <div className="hover-line"/>
                     </Link>
-                    <div className="about__list-item list-item">
+                    <Link className="about__list-item list-item" to={`/development`}>
                         <div id="second" className="list-item__image"></div>
                         <div className="list-item__title">Разработка</div>
                         <div className="hover-line"/>
-                    </div>
-                    <div className="about__list-item list-item">
+                    </Link>
+                    <Link className="about__list-item list-item" to={`/laboratory`}>
                         <div id="third" className="list-item__image"></div>
                         <div className="list-item__title">Лаборатория</div>
                         <div className="hover-line"/>
-                    </div>
+                    </Link>
                     <div className="about__list-item list-item">
                         <div id="fourth" className="list-item__image"></div>
                         <div className="list-item__title">Персонал</div>
