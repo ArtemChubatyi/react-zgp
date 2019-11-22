@@ -6,7 +6,7 @@ import Development from "../Development/Development";
 import Laboratory from "../Laboratory/Laboratory";
 
 function Home() {
-    return <div className="textlogo parallax-layer text"  data-parallax-deep="3000" />
+    return <div className="textlogo parallax-layer text"  data-parallax-deep="2000" />
 }
 
 function ContentContainer ({isPageLoaded}) {
