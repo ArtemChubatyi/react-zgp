@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import preloader from "./images/preloader.gif";
+import preloader from "../../images/preloader.gif";
 
 function Services ({isPageLoaded, match}) {
     return (

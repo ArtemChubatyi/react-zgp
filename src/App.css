@@ -2,40 +2,13 @@ body {
   overflow-y: hidden;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background: black;
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .preloader-screen {
@@ -50,8 +23,13 @@ body {
   background-color: white;
 }
 
-.preloader-screen.loaded {
+.preloader-screen.hidden {
   margin-top: -100vh;
+}
+
+.preloader-logo {
+  height: 30px;
+  width: 200px;
 }
 
 .main-page {
@@ -94,7 +72,7 @@ body {
 .text {
   background-image: url("images/logo.png");
   z-index: 3;
-  background-size: 342px 55px;
+  background-size: 300px 50px;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -105,90 +83,6 @@ body {
 }
 .visible {
   opacity: 1;
-}
-.menu-button {
-  z-index: 5;
-  width: 40px;
-  height: 32px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  cursor: pointer;
-  transition: 0.7s;
-}
-.menu-button.hided {
-  top: -50px;
-}
-.hamburger-line {
-  background: #ffffff;
-  height: 1px;
-  transition: 0.5s;
-}
-.hamburger-line:nth-child(1) {
-  width: 65%;
-}
-.hamburger-line:nth-child(2) {
-  width: 110%;
-}
-.hamburger-line:nth-child(3) {
-  width: 70%;
-}
-.hamburger-line:nth-child(4) {
-  width: 120%;
-}
-.menu-button:hover .hamburger-line {
-  width: 100%;
-}
-.hamburger-line.compressed {
-  width: 0;
-}
-
-.chat-button {
-  z-index: 3;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 40px;
-  height: 40px;
-  transition: 0.5s;
-}
-.chat-button.hided {
-  bottom: -50px;
-}
-
-.open-menu-button {
-  z-index: 3;
-  position: fixed;
-  bottom: -25px;
-  margin-left: 50%;
-  left: -35px;
-  width: 70px;
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ffffff;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.open-menu-button:hover {
-  bottom: 0;
-}
-.open-line {
-  margin: 9px;
-}
-.vertical-line {
-  background: #ffffff;
-  width: 1px;
-  height: 100%;
-}
-
-.open-menu-button.hided {
-  bottom: -130px;
 }
 
 .menu-page {
@@ -209,11 +103,11 @@ body {
   visibility: hidden;
 }
 
-.menu-page.opened {
+.menu-page.visible {
   opacity: 1;
   visibility: visible;
 }
-.menu-page.hided {
+.menu-page.hidden {
   animation-name: hideMenu;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;

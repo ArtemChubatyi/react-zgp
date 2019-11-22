@@ -1,0 +1,53 @@
+.menu-button {
+  z-index: 5;
+  width: 40px;
+  height: 32px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.7s;
+  &.hidden {
+    top: -50px;
+  }
+  .menu-button-line {
+    background: #ffffff;
+    height: 1px;
+    transition: 0.5s;
+    &:nth-child(1) {
+      width: 65%;
+    }
+    &:nth-child(2) {
+      width: 110%;
+    }
+    &:nth-child(3) {
+      width: 70%;
+    }
+    &:nth-child(4) {
+      width: 120%;
+    }
+    &.compressed {
+      width: 0;
+    }
+  }
+  &:hover .menu-button-line {
+    width: 100%;
+  }
+}
+
+.chat-button {
+  z-index: 3;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+.chat-button.hided {
+  bottom: -50px;
+}

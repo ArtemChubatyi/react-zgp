@@ -1,8 +1,8 @@
 import React from 'react';
-import './TechnologiesStyles.css';
-import preloader from "../images/preloader.gif";
+import './DevelopmentStyles.css'
+import preloader from "../../images/preloader.gif";
 
-function Technologies() {
+function Development() {
     return (
         <>
             <div className="animation-container">
@@ -18,15 +18,15 @@ function Technologies() {
             </div>
             <div className="parallax-layer tech-container"  data-parallax-deep="3000">
                 <div className="tech-container__left-side">
-                    <div className="tech-container__title">ТЕХНОЛОГИИ</div>
+                    <div className="tech-container__title">РАЗРАБОТКА</div>
                     <div className="tech-container__divider"/>
                     {/*<div className="tech-container__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>*/}
-                    <div className="tech-container__text">Наш завод располагает мощным парком автоматизированного оборудования для производства высококачественной упаковки из гофрокартона. Для производства используем как отечественное так и импортное сырьё, что дает нам возможность удовлетворять разнообразные запросы наших клиентов.</div>
+                    <div className="tech-container__text">Квалифицированные сотрудники предприятия разработают и изготовят  индивидуальный макет упаковки, учитывая специфику именно вашей продукции. На все виды гофроупаковки возможно нанесение одно или двухцветной флексографической печати.</div>
                     <button className="tech-container__contect-button">СВЯЗАТЬСЯ С НАМИ</button>
                 </div>
-                <div className="tech-container__right-side"/>
+                <div className="tech-container__right-side dev"/>
             </div>
         </>
     );
 }
-export default Technologies;
+export default Development;

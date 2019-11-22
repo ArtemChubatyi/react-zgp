@@ -1,8 +1,8 @@
 import React from 'react';
-import './DevelopmentStyles.css'
-import preloader from "../images/preloader.gif";
+import './LaboratoryStyles.scss'
+import preloader from "../../images/preloader.gif";
 
-function Development() {
+function Laboratory() {
     return (
         <>
             <div className="animation-container">
@@ -29,4 +29,4 @@ function Development() {
         </>
     );
 }
-export default Development;
+export default Laboratory;
