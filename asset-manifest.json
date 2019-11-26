@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.ceeb9332.chunk.css",
-    "main.js": "/react-zgp/static/js/main.44f2dd89.chunk.js",
-    "main.js.map": "/react-zgp/static/js/main.44f2dd89.chunk.js.map",
+    "main.css": "/react-zgp/static/css/main.d08ce21a.chunk.css",
+    "main.js": "/react-zgp/static/js/main.b0a08914.chunk.js",
+    "main.js.map": "/react-zgp/static/js/main.b0a08914.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
     "runtime~main.js.map": "/react-zgp/static/js/runtime~main.f30e12c4.js.map",
-    "static/js/2.3e259a68.chunk.js": "/react-zgp/static/js/2.3e259a68.chunk.js",
-    "static/js/2.3e259a68.chunk.js.map": "/react-zgp/static/js/2.3e259a68.chunk.js.map",
+    "static/js/2.c48e1e52.chunk.js": "/react-zgp/static/js/2.c48e1e52.chunk.js",
+    "static/js/2.c48e1e52.chunk.js.map": "/react-zgp/static/js/2.c48e1e52.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.7ba38f603c4a6ca5d10633a9eb93fb5a.js": "/react-zgp/precache-manifest.7ba38f603c4a6ca5d10633a9eb93fb5a.js",
+    "precache-manifest.0eeb3c6b69c78897062de8b163de478a.js": "/react-zgp/precache-manifest.0eeb3c6b69c78897062de8b163de478a.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.ceeb9332.chunk.css.map": "/react-zgp/static/css/main.ceeb9332.chunk.css.map",
+    "static/css/main.d08ce21a.chunk.css.map": "/react-zgp/static/css/main.d08ce21a.chunk.css.map",
     "static/media/App.css": "/react-zgp/static/media/video.04b47d98.png",
-    "static/media/TechnologiesStyles.css": "/react-zgp/static/media/draw-service-brand.0a62312a.png",
-    "static/media/preloader.gif": "/react-zgp/static/media/preloader.d9224981.gif",
-    "static/media/DevelopmentStyles.css": "/react-zgp/static/media/robot.e19e117d.png",
-    "static/media/video.mp4": "/react-zgp/static/media/video.1175895b.mp4",
-    "static/media/LaboratoryStyles.css": "/react-zgp/static/media/werk.42312f3e.png"
+    "static/media/ServicesItemStyles.scss": "/react-zgp/static/media/robot.e19e117d.png",
+    "static/media/preloader.gif": "/react-zgp/static/media/preloader.a7c36090.gif",
+    "static/media/video.mp4": "/react-zgp/static/media/video.7ef1e852.mp4"
   }
 }
