@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Services from '../Services/Services';
-import Technologies from "../Technologies/Technologies";
+import {Technologies} from "../Technologies/Technologies";
 import Development from "../Development/Development";
 import Laboratory from "../Laboratory/Laboratory";
 

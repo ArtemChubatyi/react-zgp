@@ -1,24 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import preloader from "../../images/preloader.gif";
+import {Link} from "react-router-dom";
+import {Preloader} from "../Preloader/Preloader";
 
 function Services ({isPageLoaded, match}) {
     return (
         <>
-            <div className="animation-container">
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <div className="animation-column"></div>
-                <img src={preloader} className="animation-preloader"/>
-            </div>
-            <div className={"about parallax-layer"}  data-parallax-deep="3000">
+            <Preloader/>
+            <div className='about parallax-layer'  data-parallax-deep="3000">
                 <p className="about__title">НАША КОМПАНИЯ</p>
-                <div className={"divider"}/>
+                <div className='divider'/>
                 <p className="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorum earum ex ipsam. Culpa delectus, minus natus obcaecati quam unde?</p>
                 <div className="about__list">
                     <Link className="about__list-item list-item" to={`/technologies`}>

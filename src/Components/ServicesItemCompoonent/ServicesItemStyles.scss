@@ -1,0 +1,131 @@
+.services-item-container {
+  display: flex;
+  position: absolute;
+  z-index: 4;
+}
+
+.services-item-container__text-side {
+  color: white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &.left-alignment {
+    align-items: flex-end;
+    text-align: end;
+  }
+  &.right-alignment {
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+.services-item-container__title {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+.services-item-container__title, .services-item-container__description, .services-item-container__text, .services-item-container__contect-button{
+  animation-name: appearingElement;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.services-item-container__description {
+  font-size: 23px;
+  font-style: italic;
+  margin-bottom: 30px;
+  animation-delay: 100ms;
+
+}
+
+.services-item-container__text {
+  width: 80%;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 30px;
+  animation-delay: 200ms;
+}
+
+.services-item-container__image-side {;
+  width: 50%;
+  height: 100%;
+  background-position: center center;
+  background-size: 700px 500px;
+  background-repeat: no-repeat;
+  animation-name: appearingElementTop;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  opacity: 0;
+  transform: translateY(-200px);
+  &.left-alignment {
+    align-items: flex-start;
+  }
+  &.right-alignment {
+    align-items: flex-end;
+  }
+}
+
+.services-item-container__contect-button {
+  display: inline-block;
+  line-height: 41px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #5ec7eb;
+  color: #5ec7eb;
+  padding: 0 25px;
+  padding-top: 2px;
+  cursor: pointer;
+  animation-delay: 300ms;
+}
+
+@keyframes appearingElement {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearingElementTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.technologies-service-item {
+  .services-item-container__image-side {
+    background-image: url("../../images/draw-service-brand.png");
+  }
+}
+
+.development-service-item {
+  .services-item-container__image-side {
+    background-image: url("../../images/robot.png");  }
+}
+
+

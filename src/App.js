@@ -6,7 +6,6 @@ import Background from './Components/BackgroundComponent/Background.jsx';
 import ContentContainer from './Containers/ContentContainer/ContentContainer.jsx';
 import Interface from './Components/InterfaceComponent/Interface.js';
 import MenuPage from './Containers/MenuPage/MenuPage.js'
-import About from "./Containers/About/About";
 
 
 class App extends Component {
@@ -36,7 +35,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-
+      this.checkPageLoading();
   }
 
   render () {
@@ -47,7 +46,6 @@ class App extends Component {
             <div className={`preloader-screen${isLoaded ? ' hidden' : ''}`}>
               <img src={preloader} alt="site preloader" className="preloader-logo"/>
             </div>
-            {this.checkPageLoading()}
             <Router>
               <ContentContainer isPageLoaded={this.state.isLoaded} />
               <div className="main-page">
