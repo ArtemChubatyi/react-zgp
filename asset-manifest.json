@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.0a64cfe4.chunk.css",
-    "main.js": "/react-zgp/static/js/main.c1e39732.chunk.js",
-    "main.js.map": "/react-zgp/static/js/main.c1e39732.chunk.js.map",
+    "main.css": "/react-zgp/static/css/main.a3bdb6fd.chunk.css",
+    "main.js": "/react-zgp/static/js/main.2b0dc8cb.chunk.js",
+    "main.js.map": "/react-zgp/static/js/main.2b0dc8cb.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
     "runtime~main.js.map": "/react-zgp/static/js/runtime~main.f30e12c4.js.map",
     "static/js/2.798e70cf.chunk.js": "/react-zgp/static/js/2.798e70cf.chunk.js",
     "static/js/2.798e70cf.chunk.js.map": "/react-zgp/static/js/2.798e70cf.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.8f5dc9ab7fd21416c1df51cd12d4de45.js": "/react-zgp/precache-manifest.8f5dc9ab7fd21416c1df51cd12d4de45.js",
+    "precache-manifest.03a3a32b49c5de7fd95c99f77e845543.js": "/react-zgp/precache-manifest.03a3a32b49c5de7fd95c99f77e845543.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.0a64cfe4.chunk.css.map": "/react-zgp/static/css/main.0a64cfe4.chunk.css.map",
+    "static/css/main.a3bdb6fd.chunk.css.map": "/react-zgp/static/css/main.a3bdb6fd.chunk.css.map",
     "static/media/App.css": "/react-zgp/static/media/video.04b47d98.png",
-    "static/media/ServicesItemStyles.scss": "/react-zgp/static/media/robot.e19e117d.png",
+    "static/media/ServicesItemStyles.scss": "/react-zgp/static/media/warlock.b41db0f7.png",
     "static/media/preloader.gif": "/react-zgp/static/media/preloader.a7c36090.gif",
     "static/media/video.mp4": "/react-zgp/static/media/video.f029307c.mp4"
   }
