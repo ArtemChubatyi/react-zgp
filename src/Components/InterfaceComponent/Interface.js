@@ -30,7 +30,7 @@ class Interface extends Component  {
                     <div className={`menu-button-line${isPageLoaded ? '' : ' compressed'}`}/>
                     <div className={`menu-button-line${isPageLoaded ? '' : ' compressed'}`}/>
                 </div>
-                <div className={this.state.chatButtonClass}>
+                <div className={`chat-button${isPageLoaded ? '' : ' hidden'}`}>
                     <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope" role="img"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                          className="svg-inline--fa fa-envelope fa-w-16 fa-3x">

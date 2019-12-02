@@ -47,7 +47,8 @@
   width: 40px;
   height: 40px;
   transition: 0.5s;
+  cursor: pointer;
 }
-.chat-button.hided {
+.chat-button.hidden {
   bottom: -50px;
 }

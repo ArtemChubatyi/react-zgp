@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {Route} from "react-router-dom";
 import Services from '../Services/Services';
 import {Technologies} from "../Technologies/Technologies";
 import Development from "../Development/Development";
 import Laboratory from "../Laboratory/Laboratory";
+import {ContactsComponent} from "../Contacts/ContactsContainer";
 
 function Home() {
     return <div className="textlogo parallax-layer text"  data-parallax-deep="2000" />
@@ -17,6 +18,7 @@ function ContentContainer ({isPageLoaded}) {
             <Route path="/technologies" component={Technologies} />
             <Route path="/development" component={Development} />
             <Route path="/laboratory" component={Laboratory} />
+            <Route path="/contacts" component={ContactsComponent} />
         </div>
 );
 
