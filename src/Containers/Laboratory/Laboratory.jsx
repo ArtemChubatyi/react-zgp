@@ -4,10 +4,10 @@ import {ServicesItemComponent} from "../../Components/ServicesItemCompoonent/Ser
 function Laboratory() {
     return (
         <ServicesItemComponent
-            customClass={'development-service-item'}
-            title={'РАЗРАБОТКА'}
-            description={'Квалифицированные сотрудники предприятия разработают и изготовят  индивидуальный макет упаковки, учитывая специфику именно вашей продукции. На все виды гофроупаковки возможно нанесение одно или двухцветной флексографической печати.'}
-            textPartAlignment={'right'}
+            customClass={'laboratory-service-item'}
+            title={'ЛАБОРАТОРИЯ'}
+            description={'Главенствующей идеологией всего производственного процесса на предприятии  является постоянный контроль качества продукции. Непрерывную работу ведет специально оборудованная лаборатория, где отслеживаются все технические показатели и нормативные соответствия поступающего сырья и готового продукта.'}
+            textPartAlignment={'left'}
         />
     );
 }

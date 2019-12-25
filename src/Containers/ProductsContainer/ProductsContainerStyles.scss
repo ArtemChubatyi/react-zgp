@@ -1,0 +1,65 @@
+.testDiv {
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  position: absolute;
+}
+
+.animation {
+  position: fixed;
+  z-index: 16;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .verticalColumn {
+    margin-top: 110%;
+    height: 100%;
+    width: 13%;
+    border-right: 0.5px solid lightgray;
+    box-sizing: border-box;
+    background-color: white;
+    animation-name: animUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    &:nth-child(2) {
+      animation-delay: 50ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 100ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 150ms;
+    }
+    &:nth-child(5) {
+      animation-delay: 200ms;
+    }
+    &:nth-child(6) {
+      animation-delay: 250ms;
+    }
+    &:nth-child(7) {
+      animation-delay: 300ms;
+    }
+    &:nth-child(8) {
+      animation-delay: 350ms;
+    }
+    &.inverse {
+      animation-direction: reverse;
+    }
+  }
+}
+
+@keyframes animUp {
+  0% {
+    margin-top: 110%;
+  }
+  30% {
+    margin-top: 0;
+  }
+  60% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -110%;
+  }
+}

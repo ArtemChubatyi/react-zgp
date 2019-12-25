@@ -14,10 +14,10 @@ export class DefaultContactView extends Component  {
 
     render () {
         const {isQuestionsMenuOpen} = this.state;
+        const {setContactView} = this.props;
 
         return (
             <>
-                <div className={`services-item-container__text-side left-alignment`}>
                     <div className="services-item-container__title mini">ПОЯВИЛСЯ ВОПРОС?</div>
                     <div className="services-item-container__description">Ответить вам - наш долг</div>
                     <div className="services-item-container__divider"/>
@@ -35,7 +35,7 @@ export class DefaultContactView extends Component  {
                             <a href={'https://goo.gl/maps/eqLXWQKvpFTWQpFq7'} className="contact-info__text">Чехова, 2, Городище, Черкасская область</a>
                         </div>
                     </div>
-                    <div className="services-item-container__title mini">ПОЯВИЛСЯ КОНКРЕТНЫЙ ВОПРОС?</div>
+                    <div className="services-item-container__title mini second">ПОЯВИЛСЯ КОНКРЕТНЫЙ ВОПРОС?</div>
                     <div className={`services-item-container__contect-button${isQuestionsMenuOpen ? ' open' : ''}`} onClick={this.handleQuestionsOpen}>
                         <div className="button-text"> ВЫБЕРИТЕ ПОДХОДЯЩЕЕ
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down"
@@ -46,14 +46,12 @@ export class DefaultContactView extends Component  {
                                       className=""/>
                             </svg></div>
                         <div className={`questions-container${isQuestionsMenuOpen ? ' visible' : ''}`}>
-                            <p className="questions-container__item">Я хочу сделать заказ</p>
+                            <p className="questions-container__item" onClick={()=> {setContactView('sales')}}>Я хочу сделать заказ</p>
                             <p className="questions-container__item">Мне нужно больше информации</p>
                             <p className="questions-container__item">Мы хотим с вами сотрудничать</p>
                             <p className="questions-container__item">Хочу у вас работать</p>
                         </div>
                     </div>
-                </div>
-                <div className="services-item-container__image-side"/>
             </>
         );
     }

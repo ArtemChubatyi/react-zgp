@@ -1,0 +1,13 @@
+.parallax-layer {
+  &.video {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe {
+      width: 77%;
+      height: 57%;
+      background-color: transparent;
+    }
+  }
+}
