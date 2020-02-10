@@ -14,7 +14,6 @@ export class ContactsComponent extends Component  {
     };
 
     getCurrentView = () => {
-        console.log(this.state.currentView);
         switch (this.state.currentView) {
             case 'default':
                 return <DefaultContactView setContactView={this.setContactView}/>;

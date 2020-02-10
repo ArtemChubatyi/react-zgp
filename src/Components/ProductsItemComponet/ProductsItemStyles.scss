@@ -1,10 +1,20 @@
-.services-item-container {
+.testDiv {
+  animation-name: appearingElement;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+  animation-duration: 700ms;
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.products-item-container {
   display: flex;
   position: absolute;
   z-index: 4;
 }
 
-.services-item-container__text-side {
+.products-item-container__text-side {
   color: white;
   width: 50%;
   height: 100%;
@@ -21,66 +31,53 @@
   }
 }
 
-.services-item-container__title {
+.products-item-container__title {
   font-size: 4em;
   margin-bottom: 30px;
   &.mini {
     font-size: 2em;
     &.second {
-      animation-delay: 2750ms;
+      animation-delay: 0ms;
     }
   }
 }
 
-.services-item-container__title, .services-item-container__description,
-.services-item-container__text, .services-item-container__contect-button,
-.services-item-container__divider, .contact-info {
+.products-item-container__title, .products-item-container__description,
+.products-item-container__text, .products-item-container__contect-button,
+.products-item-container__divider, .contact-info {
   animation-name: appearingElement;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 2450ms;
+  animation-delay: 0ms;
   animation-duration: 700ms;
   opacity: 0;
   transform: translateY(200px);
 }
 
-.form-container {
-  .services-item-container__title, .services-item-container__description,
-  .services-item-container__text, .services-item-container__contect-button,
-  .services-item-container__divider, .contact-info, .form-input {
-    animation-name: appearingElementLinear;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    animation-duration: .5s;
-    opacity: 0;
-    transform: translateY(200px);
-  }
+.products-item-container__description {
+  font-size: 23px;
+  font-style: italic;
+  margin-bottom: 30px;
+  animation-delay: 0ms;
 }
 
-.services-item-container__description {
-   font-size: 23px;
-   font-style: italic;
-   margin-bottom: 30px;
-   animation-delay: 2550ms;
- }
-
-.services-item-container__divider {
+.products-item-container__divider {
   width: 100px;
   height: 2px;
   background-color: #5ec7eb;
   margin-bottom: 30px;
-  animation-delay: 2550ms;
+  animation-delay: 0ms;
 }
 
-.services-item-container__text {
+.products-item-container__text {
   width: 80%;
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 30px;
-  animation-delay: 2650ms;
+  animation-delay: 0ms;
 }
 
-.services-item-container__image-side {;
+.products-item-container__image-side {;
   width: 50%;
   height: 100%;
   background-position: center center;
@@ -89,7 +86,7 @@
   animation-name: appearingElementTop;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 2450ms;
+  animation-delay: 0ms;
   animation-duration: 700ms;
   opacity: 0;
   transform: translateY(-200px);
@@ -101,7 +98,7 @@
   }
 }
 
-.services-item-container__contect-button {
+.products-item-container__contect-button {
   display: inline-block;
   line-height: 41px;
   font-size: 17px;
@@ -114,7 +111,7 @@
   padding: 0 25px;
   padding-top: 2px;
   cursor: pointer;
-  animation-delay: 2750ms;
+  animation-delay: 0ms;
   transition: .3s;
   &:hover {
     color: black;
@@ -156,34 +153,34 @@
 }
 
 .technologies-service-item {
-  .services-item-container__image-side {
-    background-image: url("../../images/draw-service-brand.png");
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");
   }
 }
 
 .development-service-item {
-  .services-item-container__image-side {
-    background-image: url("../../images/robot.png");  }
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");  }
 }
 
 .laboratory-service-item {
-  .services-item-container__image-side {
-    background-image: url("../../images/warlock.png");  }
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");  }
 }
 
 .contacts-container, .form-container {
-  .services-item-container__image-side {
-    background-image: url("../../images/draw_contact.png");  }
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");  }
 }
 
 .park-service-item {
-  .services-item-container__image-side {
-    background-image: url("../../images/planet.png");  }
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");  }
 }
 
 .staff-service-item {
-  .services-item-container__image-side {
-    background-image: url("../../images/elephant.png");  }
+  .products-item-container__image-side {
+    background-image: url("../../images/open-box.png");  }
 }
 
 
