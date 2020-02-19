@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-zgp/static/css/main.d8c85008.chunk.css",
+    "main.css": "/react-zgp/static/css/main.b729eb77.chunk.css",
     "main.js": "/react-zgp/static/js/main.d9f5c305.chunk.js",
     "main.js.map": "/react-zgp/static/js/main.d9f5c305.chunk.js.map",
     "runtime~main.js": "/react-zgp/static/js/runtime~main.f30e12c4.js",
@@ -8,9 +8,9 @@
     "static/js/2.e9388737.chunk.js": "/react-zgp/static/js/2.e9388737.chunk.js",
     "static/js/2.e9388737.chunk.js.map": "/react-zgp/static/js/2.e9388737.chunk.js.map",
     "index.html": "/react-zgp/index.html",
-    "precache-manifest.4e29b9d3d7bac0b304b49278e5fd1483.js": "/react-zgp/precache-manifest.4e29b9d3d7bac0b304b49278e5fd1483.js",
+    "precache-manifest.976c0fb7a12c5773a705690939be56a9.js": "/react-zgp/precache-manifest.976c0fb7a12c5773a705690939be56a9.js",
     "service-worker.js": "/react-zgp/service-worker.js",
-    "static/css/main.d8c85008.chunk.css.map": "/react-zgp/static/css/main.d8c85008.chunk.css.map",
+    "static/css/main.b729eb77.chunk.css.map": "/react-zgp/static/css/main.b729eb77.chunk.css.map",
     "static/media/App.css": "/react-zgp/static/media/video.04b47d98.png",
     "static/media/ServicesItemStyles.scss": "/react-zgp/static/media/warlock.b41db0f7.png",
     "static/media/ProductsItemStyles.scss": "/react-zgp/static/media/open-box.3f8914c9.png",
